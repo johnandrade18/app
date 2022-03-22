@@ -1,0 +1,48 @@
+<div id="kt_body" class="bg-body vh-100">
+  <div class="d-flex flex-column flex-root h-100">
+    <div class="d-flex flex-column flex-lg-row flex-column-fluid  justify-content-center ">
+      <div
+        class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative py-10">
+        <div class="d-flex flex-center flex-column flex-column-fluid">
+          <div class="w-lg-500px w-md-500px w-sm-500px w-xs-400px p-10 p-lg-15 p-md-15 p-sm-15 p-xs-15">
+            <form class="form w-100" [formGroup]="formulario"  (ngSubmit)="login()">
+              <div class="text-center mb-10">
+                <h1 class="text-dark mb-3">Bienvenido</h1>
+              </div>
+              <div class="fv-row mb-10">
+                <label class="form-label fs-6 fw-bolder text-dark">Usuario</label>
+                <input class="form-control form-control-lg" type="number" formControlName="identificacion"  name="usuario" autocomplete="off"
+                  aria-label="usuario"  [ngClass]="{'is-invalid': invalidField('identificacion')}"/>
+                  <div class="invalid-feedback">
+                      El usuario es requerido
+                  </div>
+              </div>
+              <div class="fv-row mb-10">
+                <div class="d-flex flex-stack mb-2">
+                  <label class="form-label fw-bolder text-dark fs-6 mb-0">Password</label>
+                  <a href="#" class="link-primary fs-6 fw-bolder">Forgot Password ?</a>
+                </div>
+                <input class="form-control form-control-lg" type="password" formControlName="password"  name="password" autocomplete="off"
+                  aria-label="password"  [ngClass]="{'is-invalid': invalidField('password')}"/>
+                  <div class="invalid-feedback">
+                    El password es requerido
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary w-100 mb-5">
+                  <span class="indicator-label">Ingresar</span>
+                  <span class="indicator-progress">Please wait...
+                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column  d-none d-lg-block d-lx-block flex-lg-row-fluid body-bg ">
+        <div class="d-flex flex-column position-xl-fixed top-0 bottom-0 w-xl-600px scroll-y ">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
