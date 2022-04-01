@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { DomiciliarioRoutingModule } from './domiciliario-routing.module';
+import { OrdenDeTrabajoRoutingModule } from './orden-de-trabajo-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    DomiciliarioRoutingModule,
+    OrdenDeTrabajoRoutingModule
   ]
 })
-export class DomiciliarioModule { }
+export class OrdenDeTrabajoModule { }

@@ -7,6 +7,12 @@ import { LoginModule } from './login/login.module';
 
 import { AppRoutingModule } from '../app-routing.module';
 import { DomiciliarioComponent } from './main/domiciliario/domiciliario.component';
+import { MatTableModule } from '@angular/material/table';
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -21,6 +27,7 @@ import { DomiciliarioComponent } from './main/domiciliario/domiciliario.componen
     SharedModule,
     AppRoutingModule,
     LoginModule,
+    MatTableModule,
   ]
 })
 export class PagesModule { }
